@@ -1,5 +1,6 @@
 package dev.grupo.pc02_20200057_19200146
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -37,7 +38,7 @@ class LOGIN : AppCompatActivity() {
                     task ->
                     if(task.isSuccessful){
                         Snackbar.make(findViewById(android.R.id.content), "Inicio de sesión exitoso", Snackbar.LENGTH_SHORT).show()
-                    //startActivity(Intent(this, MainActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
                     }else{
                         Snackbar.make(findViewById(android.R.id.content), "Inicio de sesión fallido", Snackbar.LENGTH_SHORT).show()
                     }
