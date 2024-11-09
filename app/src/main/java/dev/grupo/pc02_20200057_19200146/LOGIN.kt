@@ -27,7 +27,7 @@ class LOGIN : AppCompatActivity() {
         val etpassword: EditText = findViewById(R.id.etcontraseña)
         val btnlogin: Button = findViewById(R.id.btnlogin)
         val auth = FirebaseAuth.getInstance()
-//
+///
         btnlogin.setOnClickListener {
             val email = etemail.text.toString()
             val password = etpassword.text.toString()
