@@ -45,7 +45,7 @@ class HomeFragment : Fragment() {
 
         return view
     }
-
+//
     private fun cargarmovimiento() {
         val user = FirebaseAuth.getInstance().currentUser
         if (user != null) {
