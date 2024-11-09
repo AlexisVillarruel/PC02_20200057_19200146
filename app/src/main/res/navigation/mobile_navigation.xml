@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/registroFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -22,4 +22,9 @@
         android:name="dev.grupo.pc02_20200057_19200146.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="dev.grupo.pc02_20200057_19200146.Fragments.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" />
 </navigation>
